@@ -40,6 +40,10 @@
             android:name="com.xmedic.cink.KnotGameActivity"
             android:label="@string/title_activity_knot_game" >
         </activity>
+        <activity
+            android:name="com.xmedic.cink.PrepareActivity"
+            android:label="@string/title_activity_prepare" >
+        </activity>
     </application>
 
 </manifest>

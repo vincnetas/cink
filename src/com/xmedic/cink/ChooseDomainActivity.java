@@ -1,14 +1,14 @@
 package com.xmedic.cink;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 
 import com.xmedic.cink.model.Assignment;
 import com.xmedic.cink.ui.TwoClickButton;
 
-public class ChooseDomainActivity extends Activity {
+public class ChooseDomainActivity extends FullScreenActivity {
 
 	private TwoClickButton climbingButton;
 	
@@ -19,6 +19,7 @@ public class ChooseDomainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
 		setContentView(R.layout.activity_choose_domain);
 		
 		climbingButton = (TwoClickButton) findViewById(R.id.climbing_button);

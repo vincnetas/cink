@@ -1,16 +1,16 @@
 package com.xmedic.cink;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 
-public class StartupActivity extends Activity {
+public class StartupActivity extends FullScreenActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
 		setContentView(R.layout.activity_startup);
 		
 		View background = findViewById(R.id.startup_background);
@@ -22,11 +22,4 @@ public class StartupActivity extends Activity {
 			}
 		});
 	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.activity_startup, menu);
-		return true;
-	}
-
 }

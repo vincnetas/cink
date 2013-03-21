@@ -3,13 +3,16 @@
  */
 package com.xmedic.cink.model;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * @author vincent
  *
  */
-public class Knot {
+public class Knot implements Serializable {
+
+	private static final long serialVersionUID = 2836308267072333089L;
 
 	private List<String> stepDescriptions;
 	

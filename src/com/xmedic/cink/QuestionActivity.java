@@ -2,8 +2,9 @@ package com.xmedic.cink;
 
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
 
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,12 +12,14 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.xmedic.cink.model.Assignment;
-import com.xmedic.cink.ui.QuestionFragment;
+import com.xmedic.cink.model.StepInfo;
+import com.xmedic.cink.ui.StepFragment;
 import com.xmedic.cink.util.FixedSpeedScroller;
 import com.xmedic.cink.util.Timer;
 import com.xmedic.cink.util.Util;
@@ -34,6 +37,9 @@ public class QuestionActivity extends FragmentActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
 		setContentView(R.layout.activity_question);
 		
 		int questionStyle = getIntent().getExtras().getInt(QUESTION_STYLE);
@@ -59,15 +65,6 @@ public class QuestionActivity extends FragmentActivity {
 		
 		timerText = (TextView) findViewById(R.id.time_text);
 		timerText.setTypeface(Util.getCustomFont(this, Util.NOVECENTOWIDE_BOOK), Typeface.BOLD);
-		timerText.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent(QuestionActivity.this, KnotGameActivity.class);
-				intent.putExtra(KnotGameActivity.QUESTION_STYLE, getIntent().getExtras().getInt(QUESTION_STYLE));
-				startActivity(intent);
-			}
-		});
 	}
 	
 	private Timer timerTask;
@@ -101,15 +98,21 @@ public class QuestionActivity extends FragmentActivity {
 		
 		private Assignment assignment;
 		
+		private List<StepInfo> stepInfoList = new ArrayList<StepInfo>();		
+		
 		public ScreenSlidePagerAdapter(FragmentManager fm, Assignment assignment) {
 			super(fm);
 			this.assignment = assignment;
+			for (int i = 0; i < assignment.getSteps(); i++) {
+				stepInfoList.add(new StepInfo(i, assignment));
+			}
 		}
-
+		
 		@Override
 		public Fragment getItem(int position) {
-			QuestionFragment fragment = new QuestionFragment();
-			fragment.setAssignemt(assignment, position);			
+			StepFragment fragment = new StepFragment();
+			fragment.setStepInfo(stepInfoList.get(position));
+			
 			return fragment;
 		}
 

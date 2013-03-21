@@ -19,15 +19,23 @@
             android:background="@android:color/transparent"
             android:src="@drawable/left" />
 
-        <com.xmedic.cink.ui.FontTextView
-            android:id="@+id/instruction_text"
+        <ScrollView
+            android:id="@+id/scrollView1"
             android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="8"
-            android:gravity="center"
-            android:text="KOKS MEDIS SKLEIDŽIA DIDŽIAUSIĄ LIEPSNĄ"
-            android:textColor="@color/font_color"
-            android:textSize="20sp" />
+            android:layout_height="wrap_content"
+            android:layout_weight="8" >
+
+            <com.xmedic.cink.ui.FontTextView
+                android:id="@+id/instruction_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:text="KOKS MEDIS SKLEIDŽIA DIDŽIAUSIĄ LIEPSNĄ"
+                android:textColor="@color/font_color"
+                android:textSize="20sp" />
+
+        </ScrollView>
 
         <ImageButton
             android:id="@+id/imageButton2"

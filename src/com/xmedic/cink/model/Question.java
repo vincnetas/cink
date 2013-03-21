@@ -3,11 +3,15 @@
  */
 package com.xmedic.cink.model;
 
+import java.io.Serializable;
+
 /**
  * @author vincentas
  *
  */
-public class Question {
+public class Question implements Serializable {
+	
+	private static final long serialVersionUID = -3638858799013155259L;
 
 	private String question;
 	
