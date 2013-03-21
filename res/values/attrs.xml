@@ -1,0 +1,12 @@
+<resources>
+
+    <declare-styleable name="TwoClickButton">
+        <attr name="inactive" format="reference" />
+        <attr name="active" format="reference" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+    <declare-styleable name="FontTextView">
+        <attr name="font" format="string" />
+    </declare-styleable>
+
+</resources>

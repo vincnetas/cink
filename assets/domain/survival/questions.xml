@@ -1,0 +1,221 @@
+<questions>
+  <question>
+    <text>Which tree emits the biggest flame?</text>
+    <options>
+      <option>Dense</option>
+      <option>Oak</option>
+      <option>Ash</option>
+	  <option>Linden</option>
+    </options>
+    <answer>Dense</answer>
+  </question>
+  
+  <question>
+    <text>What does it mean when you see the clouds with shining edges? That predicts:</text>
+    <options>
+      <option>Strong wind</option>
+      <option>The rain</option>
+      <option>A spell of good weather</option>
+	  <option>Stormy weather</option>
+    </options>
+    <answer>Strong wind</answer>
+  </question>
+  
+  <question>
+    <text>What is the antidote for the poison of vespine?</text>
+    <options>
+      <option>Juice of raw onion</option>
+      <option>Ammonia</option>
+      <option>Soda</option>
+	  <option>Vinegar</option>
+    </options>
+    <answer>Juice of raw onion</answer>
+  </question>
+  
+  <question>
+    <text>A person treads softly when...</text>
+    <options>
+      <option>He puts his feet flat</option>
+      <option>The first movement is from the heel</option>
+      <option>The first movement comes from the toes</option>
+	  <option>There is no correct answer</option>
+    </options>
+    <answer>He puts his feet flat</answer>
+  </question>
+  
+  <question>
+    <text>The normal pulse is...</text>
+    <options>
+      <option>75 races per second</option>
+      <option>65 races per second</option>
+      <option>80 races per second</option>
+	  <option>85 races per second</option>
+    </options>
+    <answer>75 races per second</answer>
+  </question>
+  
+  <question>
+    <text>One of smoke signals is three big puffs. What does it mean?</text>
+    <options>
+      <option>Go further</option>
+      <option>Stop</option>
+      <option>Danger</option>
+	  <option>Gather together</option>
+    </options>
+    <answer>Go further</answer>
+  </question>
+  
+  <question>
+    <text>120 steps make…</text>
+    <options>
+      <option>900 meters</option>
+      <option>800 meters</option>
+      <option>1000 meters</option>
+	  <option>400 meters</option>
+    </options>
+    <answer>900 meters</answer>
+  </question>
+  
+  <question>
+    <text>The average height of the person from the wrist to the elbow is...</text>
+    <options>
+      <option>25 centimeters</option>
+      <option>40 centimeters</option>
+      <option>35 centimeters</option>
+	  <option>20 centimeters</option>
+    </options>
+    <answer>25 centimeters</answer>
+  </question>
+  
+   <question>
+    <text>The speed of sound is...</text>
+    <options>
+      <option>333 meters per second</option>
+      <option>432 meters per second</option>
+      <option>300 meters per second</option>
+	  <option>222 meters per second</option>
+    </options>
+    <answer>333 meters per second</answer>
+  </question>
+  
+    <question>
+    <text>How far is the person from you if you can tell only the color of the clothes?</text>
+    <options>
+      <option>450 meters</option>
+      <option>600 meters</option>
+      <option>1000 meters</option>
+	  <option>200 meters</option>
+    </options>
+    <answer>450 meters</answer>
+  </question>
+  
+  <question>
+    <text>What figure do these dashes ( _ _ _ _ _ ) mean in the Morse Code?</text>
+    <options>
+      <option>0</option>
+      <option>1</option>
+      <option>9</option>
+	  <option>4</option>
+    </options>
+    <answer>0</answer>
+  </question>
+  
+   <question>
+    <text>Which tree burns long and still?</text>
+    <options>
+      <option>Oak</option>
+      <option>Dry linden</option>
+      <option>Pine</option>
+	  <option>Birch</option>
+    </options>
+    <answer>Oak</answer>
+  </question>
+  
+   <question>
+    <text>One of the smoke signals is small and big puffs alternately. What do they mean?</text>
+    <options>
+      <option>Danger</option>
+      <option>Go further</option>
+      <option>Gather together</option>
+	  <option>Stop</option>
+    </options>
+    <answer>Danger</answer>
+  </question>
+  
+   <question>
+    <text>What does the yellow sunset predicts?</text>
+    <options>
+      <option>Wind</option>
+      <option>Rain</option>
+      <option>Cloudless weather</option>
+	  <option>Snow</option>
+    </options>
+    <answer>Wind</answer>
+  </question>
+  
+   <question>
+    <text>How many meters can you make in 15 minutes when you walk quickly?</text>
+    <options>
+      <option>1500 meters</option>
+      <option>2000 meters</option>
+      <option>1000 meters</option>
+	  <option>900 meters</option>
+    </options>
+    <answer>1500 meters</answer>
+  </question>
+  
+   <question>
+    <text>Semaphore signaling is when you...</text>
+    <options>
+      <option>Wave hands</option>
+      <option>Use electric light</option>
+      <option>Use hieroglyphs</option>
+	  <option>Use Morse Code</option>
+    </options>
+    <answer>Wave hands</answer>
+  </question>
+  
+   <question>
+    <text>One of the smoke signals is a steady column of smoke. What does it mean?</text>
+    <options>
+      <option>Stop</option>
+      <option>Go further</option>
+      <option>Danger</option>
+	  <option>Gather together</option>
+    </options>
+    <answer>Stop</answer>
+  </question>
+  
+   <question>
+    <text>What does the clenched fist mean in signaling?</text>
+    <options>
+      <option>Run</option>
+      <option>Disperse</option>
+      <option>Approach</option>
+	  <option>Go out</option>
+    </options>
+    <answer>Run</answer>
+  </question>
+  
+   <question>
+    <text>The Great Bear shows...</text>
+    <options>
+      <option>North</option>
+      <option>South</option>
+      <option>East</option>
+	  <option>West</option>
+    </options>
+    <answer>North</answer>
+  </question>
+  
+   <question>
+    <text>Which variant mean SOS in the Morse Code?</text>
+    <options>
+      <option>..._ _ _...</option>
+      <option>_ _ _...</option>
+      <option>_ _ _..._ _ _</option>
+	  <option>..._ _ _</option>
+    </options>
+    <answer>..._ _ _...</answer>
+  </question>
+</questions>

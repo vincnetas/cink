@@ -1,0 +1,221 @@
+<questions>
+  <question>
+    <text>When was the first regatta held?</text>
+    <options>
+      <option>1660</option>
+      <option>1600</option>
+      <option>1745</option>
+	  <option>1645</option>
+    </options>
+    <answer>1660</answer>
+  </question>
+  
+  <question>
+    <text>Where was the first regatta? In...</text>
+    <options>
+      <option>Great Britain</option>
+      <option>Spain</option>
+      <option>Portugal</option>
+	  <option>France</option>
+    </options>
+    <answer>Great Britain</answer>
+  </question>
+  
+  <question>
+    <text>When did yacht sailing become an Olympic event?</text>
+    <options>
+      <option>1896</option>
+      <option>1799</option>
+      <option>1845</option>
+	  <option>1867</option>
+    </options>
+    <answer>1896</answer>
+  </question>
+  
+  <question>
+    <text>What is the name for sailboat gage?</text>
+    <options>
+      <option>Reach</option>
+      <option>Close hauled</option>
+      <option>Broad reach</option>
+	  <option>Running</option>
+    </options>
+    <answer>Reach</answer>
+  </question>
+  
+  <question>
+    <text>What is the name of the mainsail of yacht?</text>
+    <options>
+      <option>Mainsail</option>
+      <option>Jib</option>
+      <option>Spinnaker</option>
+	  <option>Boom</option>
+    </options>
+    <answer>Mainsail</answer>
+  </question>
+  
+  <question>
+    <text>Where is the clew of the sail fixed?</text>
+    <options>
+      <option>Boom</option>
+      <option>Tiller</option>
+      <option>Mainsail</option>
+	  <option>Jib</option>
+    </options>
+    <answer>Boom</answer>
+  </question>
+  
+  <question>
+    <text>What is the name for the cable of yacht?</text>
+    <options>
+      <option>Tackle</option>
+      <option>Beam</option>
+      <option>Keel</option>
+	  <option>Pillar</option>
+    </options>
+    <answer>Tackle</answer>
+  </question>
+  
+  <question>
+    <text>What measures the speed of yacht and its distance made?</text>
+    <options>
+      <option>Log</option>
+      <option>Plumb</option>
+      <option>Bearing</option>
+	  <option>Traverse</option>
+    </options>
+    <answer>Log</answer>
+  </question>
+  
+   <question>
+    <text>How is the cable with the help of which sails are steered?</text>
+    <options>
+      <option>Sheet</option>
+      <option>Staysail sheets</option>
+      <option>Mainsail phallus</option>
+	  <option>Broad reach</option>
+    </options>
+    <answer>Sheet</answer>
+  </question>
+  
+    <question>
+    <text>What is the name for rudder handhold?</text>
+    <options>
+      <option>Tiller</option>
+      <option>Centre board</option>
+      <option>Heel</option>
+	  <option>Frame</option>
+    </options>
+    <answer>Tiller</answer>
+  </question>
+  
+  <question>
+    <text>At which sails a yacht when it is navigated side wind?</text>
+    <options>
+      <option>Beam reach</option>
+      <option>Broad reach</option>
+      <option>Close hauled</option>
+	  <option>Running</option>
+    </options>
+    <answer>Beam reach</answer>
+  </question>
+  
+   <question>
+    <text>At which rate sails a yacht when it is navigated down the wind at its highest speed?</text>
+    <options>
+      <option>Broad reach</option>
+      <option>In irons</option>
+      <option>Close hauled</option>
+	  <option>Running</option>
+    </options>
+    <answer>Broad reach</answer>
+  </question>
+  
+   <question>
+    <text>The wind direction can be defined by degrees or...</text>
+    <options>
+      <option>Rhumb</option>
+      <option>Trade wind</option>
+      <option>Reach</option>
+	  <option>Mainsail</option>
+    </options>
+    <answer>Rhumb</answer>
+  </question>
+  
+   <question>
+    <text>When does the breeze form?</text>
+    <options>
+      <option>When the water is cooler than the coast</option>
+      <option>When it is colder on the coast than in the water</option>
+      <option>After the storm</option>
+	  <option>When the temperature on the coast is the same as it is in the water</option>
+    </options>
+    <answer>When the water is cooler than the coast</answer>
+  </question>
+  
+   <question>
+    <text>How many meters does one nautical make?</text>
+    <options>
+      <option>1852</option>
+      <option>1842</option>
+      <option>1856</option>
+	  <option>1872</option>
+    </options>
+    <answer>1852</answer>
+  </question>
+  
+   <question>
+    <text>What measures the depths of the sea?</text>
+    <options>
+      <option>Plumb</option>
+      <option>Log</option>
+      <option>Sextant</option>
+	  <option>Rhumb</option>
+    </options>
+    <answer>Plumb</answer>
+  </question>
+  
+   <question>
+    <text>What is the name for stopper knot?</text>
+    <options>
+      <option>Figure of eight</option>
+      <option>Clove hitch</option>
+      <option>Rolling hitch</option>
+	  <option>Reef knot</option>
+    </options>
+    <answer>Figure of eight</answer>
+  </question>
+  
+   <question>
+    <text>What is the name of the knot which is used to form a fixed loop at the end of a rope?</text>
+    <options>
+      <option>Bowline</option>
+      <option>Figure of eight</option>
+      <option>Clove hitch</option>
+	  <option>Rolling hitch</option>
+    </options>
+    <answer>Bowline</answer>
+  </question>
+  
+   <question>
+    <text>What is the name of the knot which is a jam-proof way to connect two ropes?</text>
+    <options>
+      <option>Zeppelin bend</option>
+      <option>Uni knot</option>
+      <option>Stein knot</option>
+	  <option>Clove hitch</option>
+    </options>
+    <answer>Zeppelin bend</answer>
+  </question>
+  
+   <question>
+    <text>What is the name of the knot which is used to attach a rope to a rod, pole, or other rope?</text>
+    <options>
+      <option>Rolling hitch</option>
+      <option>Fisherman's knot</option>
+      <option>Bumper knot</option>
+	  <option>Reef knot</option>
+    </options>
+    <answer>Rolling hitch</answer>
+  </question>
+</questions>

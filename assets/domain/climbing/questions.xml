@@ -1,0 +1,221 @@
+<questions>
+  <question>
+    <text>Which year is considered to be the beginning of mountaineering?</text>
+    <options>
+      <option>1786</option>
+      <option>1686</option>
+      <option>1688</option>
+	  <option>1788</option>
+    </options>
+    <answer>1786</answer>
+  </question>
+  
+  <question>
+    <text>High–attitude climbing is when you reach...</text>
+    <options>
+      <option>8000 meters height</option>
+      <option>7000 meters height</option>
+      <option>9000 meters height</option>
+	  <option>6000 meters height</option>
+    </options>
+    <answer>8000 meters height</answer>
+  </question>
+  
+  <question>
+    <text>When was the first mountaineering club established?</text>
+    <options>
+      <option>1857</option>
+      <option>1957</option>
+      <option>1757</option>
+	  <option>1867</option>
+    </options>
+    <answer>1857</answer>
+  </question>
+  
+  <question>
+    <text>Where was the first mountaineering club established? In...</text>
+    <options>
+      <option>London</option>
+      <option>Paris</option>
+      <option>Rome</option>
+	  <option>Bern</option>
+    </options>
+    <answer>London</answer>
+  </question>
+  
+  <question>
+    <text>What does the word Himalayas in the Sanskrit language mean?</text>
+    <options>
+      <option>Abode of the snow</option>
+      <option>A range of mountains</option>
+      <option>5 states</option>
+	  <option>A seat of monsoon winds</option>
+    </options>
+    <answer>Abode of the snow</answer>
+  </question>
+  
+  <question>
+    <text>How high above the sea level is Everest?</text>
+    <options>
+      <option>8848 meters</option>
+      <option>8868 meters</option>
+      <option>8858 meters</option>
+	  <option>8878 meters</option>
+    </options>
+    <answer>8848 meters</answer>
+  </question>
+  
+  <question>
+    <text>Where is Everest?</text>
+    <options>
+      <option>Nepal</option>
+      <option>Pakistan</option>
+      <option>India</option>
+	  <option>Bhutan</option>
+    </options>
+    <answer>Nepal</answer>
+  </question>
+  
+  <question>
+    <text>Who was the first person to climb up Everest?</text>
+    <options>
+      <option>Edmund Hillary</option>
+      <option>Tensing Norgay</option>
+      <option>George Everest</option>
+	  <option>George Mallory</option>
+    </options>
+    <answer>Edmund Hillary</answer>
+  </question>
+  
+   <question>
+    <text>The first Lithuanian who climbed up Everest was...</text>
+    <options>
+      <option>Vladas Vitkauskas</option>
+      <option>Vilius Šaduikis</option>
+      <option>Saulius Vilius</option>
+	  <option>Aldas Baltutis</option>
+    </options>
+    <answer>Vladas Vitkauskas</answer>
+  </question>
+  
+    <question>
+    <text>In which year was Everest climbed up for the first time?</text>
+    <options>
+      <option>1953</option>
+      <option>1947</option>
+      <option>1957</option>
+	  <option>1973</option>
+    </options>
+    <answer>1953</answer>
+  </question>
+  
+  <question>
+    <text>How high is Mont Blanc?</text>
+    <options>
+      <option>4810 meters</option>
+      <option>4910 meters</option>
+      <option>4870 meters</option>
+	  <option>4850 meters</option>
+    </options>
+    <answer>4810 meters</answer>
+  </question>
+  
+   <question>
+    <text>What kind of the Himalayas mountain range?</text>
+    <options>
+      <option>Corrugated</option>
+      <option>Dod</option>
+      <option>Volcanic</option>
+	  <option>Laminar</option>
+    </options>
+    <answer>Corrugated</answer>
+  </question>
+  
+   <question>
+    <text>Mountains because of gravitation can’t be higher than...</text>
+    <options>
+      <option>15 kilometers</option>
+      <option>20 kilometers</option>
+      <option>35 kilometers</option>
+	  <option>40 kilometers</option>
+    </options>
+    <answer>15 kilometers</answer>
+  </question>
+  
+   <question>
+    <text>Which peak is nearest to the moon?</text>
+    <options>
+      <option>Chimborazo</option>
+      <option>Everest</option>
+      <option>Mont Blanc</option>
+	  <option>Annapurna</option>
+    </options>
+    <answer>Chimborazo</answer>
+  </question>
+  
+   <question>
+    <text>Which is the longest mountain range of the world?</text>
+    <options>
+      <option>Andes</option>
+      <option>Himalaya</option>
+      <option>Alps</option>
+	  <option>Arctic Cordillera</option>
+    </options>
+    <answer>Andes</answer>
+  </question>
+  
+   <question>
+    <text>Which is the highest peak of Andes mountains?</text>
+    <options>
+      <option>Aconcagua</option>
+      <option>Monte Pissis</option>
+      <option>Tupungato</option>
+	  <option>Sajama</option>
+    </options>
+    <answer>Aconcagua</answer>
+  </question>
+  
+   <question>
+    <text>What is the name of the lake which is located of the highest sea level on Andes mountains?</text>
+    <options>
+      <option>Titicaca</option>
+      <option>Poopo</option>
+      <option>Tsogmo</option>
+	  <option>Gurudogmar</option>
+    </options>
+    <answer>Titicaca</answer>
+  </question>
+  
+   <question>
+    <text>Where is Domeikos sierra named in honor of the geologist Domeika? In...</text>
+    <options>
+      <option>Andes</option>
+      <option>Himalayas</option>
+      <option>Alps</option>
+	  <option>Cordillera mountains</option>
+    </options>
+    <answer>Andes</answer>
+  </question>
+  
+   <question>
+    <text>The most dangerous mountain of the world is considered to be...</text>
+    <options>
+      <option>Eiger</option>
+      <option>Annapurna</option>
+      <option>Chhogori</option>
+	  <option>Nanga parbat</option>
+    </options>
+    <answer>Eiger</answer>
+  </question>
+  
+   <question>
+    <text>How many mountains have we got which are higher 8000 meters above the sea level?</text>
+    <options>
+      <option>14</option>
+      <option>16</option>
+      <option>12</option>
+	  <option>20</option>
+    </options>
+    <answer>14</answer>
+  </question>
+</questions>

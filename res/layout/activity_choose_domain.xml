@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xmedic.cink"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ChooseDomainActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="70dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.xmedic.cink.ui.TwoClickButton
+            android:id="@+id/climbing_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:active="@drawable/ic_climbing_active"
+            app:inactive="@drawable/ic_climbing"
+            app:text="@string/climbing" >
+
+        </com.xmedic.cink.ui.TwoClickButton>
+
+        <com.xmedic.cink.ui.TwoClickButton
+            android:id="@+id/survival_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:active="@drawable/ic_survival_active"
+            app:inactive="@drawable/ic_survival"
+            app:text="@string/survival" >
+
+        </com.xmedic.cink.ui.TwoClickButton>
+
+        <com.xmedic.cink.ui.TwoClickButton
+            android:id="@+id/sailing_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:active="@drawable/ic_sailing_active"
+            app:inactive="@drawable/ic_sailing"
+            app:text="@string/sailing" >
+
+        </com.xmedic.cink.ui.TwoClickButton>
+    </LinearLayout>
+
+</RelativeLayout>
