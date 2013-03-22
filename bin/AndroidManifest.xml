@@ -44,6 +44,10 @@
             android:name="com.xmedic.cink.PrepareActivity"
             android:label="@string/title_activity_prepare" >
         </activity>
+        <activity
+            android:name="com.xmedic.cink.CheckKnotActivity"
+            android:label="@string/title_activity_chcek_knot" >
+        </activity>
     </application>
 
 </manifest>

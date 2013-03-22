@@ -6,6 +6,7 @@ package com.xmedic.cink.util;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 import android.os.AsyncTask;
 import android.widget.TextView;
@@ -16,7 +17,7 @@ import android.widget.TextView;
  */
 public class Timer extends AsyncTask<Long, Long, Void> {
 
-		private DateFormat dateFormat = new SimpleDateFormat("mm:ss");
+		private DateFormat dateFormat = new SimpleDateFormat("mm:ss", Locale.US);
 				
 		private TextView textView;
 		

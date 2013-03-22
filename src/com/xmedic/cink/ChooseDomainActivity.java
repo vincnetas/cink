@@ -41,7 +41,7 @@ public class ChooseDomainActivity extends FullScreenActivity {
 		
 		@Override
 		public void onClick(View v) {
-			Intent intent = new Intent(ChooseDomainActivity.this, QuestionActivity.class);
+			Intent intent = new Intent(ChooseDomainActivity.this, PrepareActivity.class);
 			intent.putExtra(QuestionActivity.QUESTION_STYLE, style);
 			startActivity(intent);
 		}

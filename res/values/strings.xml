@@ -16,5 +16,6 @@
     <string name="title_activity_knot_game">KnotGameActivity</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_prepare">PrepareActivity</string>
+    <string name="title_activity_chcek_knot">ChcekKnotActivity</string>
 
 </resources>

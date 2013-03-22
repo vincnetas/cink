@@ -49,11 +49,12 @@ public class Util {
 		}
 	}
 	
-	public static Assignment getAssignemnt(int domain, AssetManager assetManager) {
+	public static Assignment getAssignemnt(int domain) {
 		Knot knot = App.knotManager.getKnot(domain);
 		Assignment assignment = new Assignment();
 		assignment.setKnot(knot);
 		assignment.setQuestions(App.questionManager.getQuestions(domain, knot.getStepDescriptions().size()));
+		assignment.setDomain(domain);
 		
 		return assignment;
 	}

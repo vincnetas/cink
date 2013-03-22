@@ -1,10 +1,10 @@
 package com.xmedic.cink;
 
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,6 +12,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -20,7 +21,6 @@ import android.widget.TextView;
 import com.xmedic.cink.model.Assignment;
 import com.xmedic.cink.model.StepInfo;
 import com.xmedic.cink.ui.StepFragment;
-import com.xmedic.cink.util.FixedSpeedScroller;
 import com.xmedic.cink.util.Timer;
 import com.xmedic.cink.util.Util;
 
@@ -28,11 +28,15 @@ public class QuestionActivity extends FragmentActivity {
 
 	public static final String QUESTION_STYLE = "question style";
 
+	public static final String ASSIGNMENT = "assignment";
+
 	private ImageView questionStyleImage;
 
 	private ViewPager pager;
 	
 	private TextView timerText;
+	
+	private Assignment assignment;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,29 +46,26 @@ public class QuestionActivity extends FragmentActivity {
 
 		setContentView(R.layout.activity_question);
 		
-		int questionStyle = getIntent().getExtras().getInt(QUESTION_STYLE);
-		questionStyleImage = (ImageView) findViewById(R.id.question_style_image);
-		questionStyleImage.setImageResource(questionStyle);
+		assignment = (Assignment) getIntent().getExtras().getSerializable(ASSIGNMENT);
+		ScreenSlidePagerAdapter pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), assignment);
 
-		Assignment assignemnt = Util.getAssignemnt(questionStyle, getAssets());
-		ScreenSlidePagerAdapter pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), assignemnt);
-		
+		questionStyleImage = (ImageView) findViewById(R.id.question_style_image);
+		questionStyleImage.setImageResource(assignment.getDomain());
+
 		pager = (ViewPager) findViewById(R.id.pager);
 		pager.setAdapter(pagerAdapter);
 		
-		try {
-            Field mScroller;
-            mScroller = ViewPager.class.getDeclaredField("mScroller");
-            mScroller.setAccessible(true); 
-            FixedSpeedScroller scroller = new FixedSpeedScroller(this, 1000);
-            mScroller.set(pager, scroller);
-        } catch (NoSuchFieldException e) {
-        } catch (IllegalArgumentException e) {
-        } catch (IllegalAccessException e) {
-        }
-		
 		timerText = (TextView) findViewById(R.id.time_text);
 		timerText.setTypeface(Util.getCustomFont(this, Util.NOVECENTOWIDE_BOOK), Typeface.BOLD);
+		timerText.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {				
+				Intent intent = new Intent(QuestionActivity.this, CheckKnotActivity.class);
+				intent.putExtra(QuestionActivity.ASSIGNMENT, assignment);
+				startActivity(intent);				
+			}
+		});
 	}
 	
 	private Timer timerTask;
@@ -77,7 +78,18 @@ public class QuestionActivity extends FragmentActivity {
 		super.onResume();
 		
 		long time = 2 * 60 * 1000;
-		timerTask = new Timer(timerText);		
+		timerTask = new Timer(timerText) {
+
+			@Override
+			protected void onPostExecute(Void result) {
+				super.onPostExecute(result);
+				
+				Intent intent = new Intent(QuestionActivity.this, CheckKnotActivity.class);
+				intent.putExtra(QuestionActivity.ASSIGNMENT, assignment);
+				startActivity(intent);
+			}
+			
+		};		
 		timerTask.execute(time);
 	}
 
