@@ -50,4 +50,12 @@ public class StepInfo {
 	public void setRevealed(boolean revealed) {
 		this.revealed = revealed;
 	}	
+	
+	public boolean isFirstStep() {
+		return step == 0;
+	}
+	
+	public boolean isLastStep() {
+		return step == assignment.getSteps() - 1;
+	}
 }

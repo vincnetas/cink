@@ -2,9 +2,11 @@ package com.xmedic.cink.ui;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -23,13 +25,42 @@ public abstract class QuestionView extends RelativeLayout {
 	
 	private Button button4;
 	
+	private ImageButton previousQusetionButton;
+	
+	private ImageButton nextQuestionButton;
+	
 	private TextView questionText;
 		
-	public QuestionView(Context context, StepInfo stepInfo) {
+	public QuestionView(Context context, StepInfo stepInfo, final ViewPager viewPager) {
 		super(context);
 		
 		View questionView = LayoutInflater.from(context).inflate(R.layout.layout_question, this);
 
+		previousQusetionButton = (ImageButton) findViewById(R.id.button_previous_question);
+		nextQuestionButton = (ImageButton) findViewById(R.id.button_next_question);
+		
+		if (stepInfo.isFirstStep()) {
+			previousQusetionButton.setVisibility(INVISIBLE);
+		}
+		
+		if (stepInfo.isLastStep()) {
+			nextQuestionButton.setVisibility(INVISIBLE);
+		}
+		
+		nextQuestionButton.setOnClickListener(new OnClickListener() {			
+			@Override
+			public void onClick(View v) {
+				viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);		
+			}
+		});
+		
+		previousQusetionButton.setOnClickListener(new OnClickListener() {			
+			@Override
+			public void onClick(View v) {
+				viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);				
+			}
+		});
+		
 		button1 = (Button) questionView.findViewById(R.id.answer_1_button);
 		button2 = (Button) questionView.findViewById(R.id.answer_2_button);
 		button3 = (Button) questionView.findViewById(R.id.answer_3_button);

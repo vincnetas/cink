@@ -5,6 +5,8 @@ package com.xmedic.cink.ui;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,16 +21,18 @@ import com.xmedic.cink.model.StepInfo;
 public class StepFragment extends Fragment {
 	
 	private StepInfo stepInfo;
-
+	
 	public void setStepInfo(StepInfo stepInfo) {
 		this.stepInfo = stepInfo;
 	}
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
+		ViewPager viewPager = (ViewPager) container;
+		
 		final ViewSwitcher viewSwitcher = new ViewSwitcher(container.getContext());
 		
-		View questionView = new QuestionView(container.getContext(), stepInfo) {
+		View questionView = new QuestionView(container.getContext(), stepInfo, viewPager) {
 
 			@Override
 			protected void onCorrectAnswer() {
@@ -38,7 +42,7 @@ public class StepFragment extends Fragment {
 			
 		};
 		
-		View knotStepView = new KnotStepView(container.getContext(), stepInfo);;
+		View knotStepView = new KnotStepView(container.getContext(), stepInfo, viewPager);
 
 		viewSwitcher.addView(questionView);
 		viewSwitcher.addView(knotStepView);
@@ -52,7 +56,5 @@ public class StepFragment extends Fragment {
 		
 		return viewSwitcher;
 	}
-	
 
-	
 }

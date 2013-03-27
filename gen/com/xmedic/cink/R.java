@@ -71,20 +71,22 @@ containing a value of this type.
         public static final int wrong_answer=0x7f020011;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a001e;
-        public static final int answer_1_button=0x7f0a0018;
-        public static final int answer_2_button=0x7f0a0019;
-        public static final int answer_3_button=0x7f0a001a;
-        public static final int answer_4_button=0x7f0a001b;
-        public static final int button_image=0x7f0a001c;
-        public static final int button_text=0x7f0a001d;
+        public static final int action_settings=0x7f0a0020;
+        public static final int answer_1_button=0x7f0a001a;
+        public static final int answer_2_button=0x7f0a001b;
+        public static final int answer_3_button=0x7f0a001c;
+        public static final int answer_4_button=0x7f0a001d;
+        public static final int button_image=0x7f0a001e;
+        public static final int button_next_question=0x7f0a0019;
+        public static final int button_next_step=0x7f0a0017;
+        public static final int button_previous_question=0x7f0a0018;
+        public static final int button_previous_step=0x7f0a0014;
+        public static final int button_text=0x7f0a001f;
         public static final int chcek_title=0x7f0a0000;
         public static final int check_correct_button=0x7f0a0002;
         public static final int check_wrong_button=0x7f0a0003;
         public static final int climbing_button=0x7f0a0004;
         public static final int home_image=0x7f0a000b;
-        public static final int imageButton1=0x7f0a0014;
-        public static final int imageButton2=0x7f0a0017;
         public static final int imageView1=0x7f0a0001;
         public static final int instruction_image=0x7f0a0012;
         public static final int instruction_text=0x7f0a0016;
