@@ -20,7 +20,7 @@ public class GameScore implements Serializable {
 	}
 	
 	public int getTotalSteps() {
-		return 10;
+		return 5;
 	}
 	
 	public void scoreIncorrect() {

@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="6"
-                android:src="@drawable/a11" />
+                android:src="@drawable/mazgas3" />
 
             <Button
                 android:id="@+id/check_correct_button"

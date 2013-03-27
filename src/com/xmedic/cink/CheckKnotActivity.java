@@ -45,11 +45,19 @@ public class CheckKnotActivity extends FullScreenActivity {
 			gameScore.scoreIncorrect();
 		}
 		
-		Intent intent = new Intent(CheckKnotActivity.this, PrepareActivity.class);
-		intent.putExtra(QuestionActivity.QUESTION_STYLE, assignment.getDomain());
-		intent.putExtra(QuestionActivity.SCORE, gameScore);
-
-		startActivity(intent);
+		if (gameScore.getProgress() == gameScore.getTotalSteps()) {
+			Intent intent = new Intent(CheckKnotActivity.this, MainActivity.class);
+			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			
+			startActivity(intent);
+		} else {			
+			Intent intent = new Intent(CheckKnotActivity.this, PrepareActivity.class);
+			intent.putExtra(QuestionActivity.QUESTION_STYLE, assignment.getDomain());
+			intent.putExtra(QuestionActivity.SCORE, gameScore);
+			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+	
+			startActivity(intent);
+		}
 	}
 
 }
