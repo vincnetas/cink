@@ -21,6 +21,8 @@ public class StepInfo {
 	
 	private boolean revealed;
 	
+	private boolean mistake;
+	
 	public StepInfo(int step, Assignment assignment) {
 		this.assignment = assignment;
 		this.step = step;
@@ -53,8 +55,16 @@ public class StepInfo {
 	
 	public boolean isFirstStep() {
 		return step == 0;
-	}
+	}	
 	
+	public boolean isMistake() {
+		return mistake;
+	}
+
+	public void setMistake(boolean mistake) {
+		this.mistake = mistake;
+	}
+
 	public boolean isLastStep() {
 		return step == assignment.getSteps() - 1;
 	}

@@ -44,7 +44,7 @@ public class Question implements Serializable {
 	}
 
 	/**
-	 * @return the options
+	 * @return the options`
 	 */
 	public String[] getOptions() {
 		return options;

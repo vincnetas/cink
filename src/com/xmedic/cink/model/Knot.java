@@ -3,8 +3,13 @@
  */
 package com.xmedic.cink.model;
 
+import java.io.File;
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.List;
+
+import android.content.Context;
+import android.graphics.drawable.Drawable;
 
 /**
  * @author vincent
@@ -93,7 +98,12 @@ public class Knot implements Serializable {
 		this.domain = domain;
 	}
 	
-	
-	
-	
+	public Drawable getFinalKnot(Context context) {
+		try {
+			String imagePath = getKnotPath() + File.separator + Integer.toString(stepDescriptions.size()) + ".png";
+			return Drawable.createFromStream(context.getAssets().open(imagePath), null);
+		} catch (IOException e) {
+			throw new Error(e);
+		}
+	}
 }

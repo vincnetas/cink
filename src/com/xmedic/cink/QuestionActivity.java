@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.xmedic.cink.model.Assignment;
+import com.xmedic.cink.model.GameScore;
 import com.xmedic.cink.model.StepInfo;
 import com.xmedic.cink.ui.StepFragment;
 import com.xmedic.cink.util.Timer;
@@ -29,6 +30,8 @@ public class QuestionActivity extends FragmentActivity {
 	public static final String QUESTION_STYLE = "question style";
 
 	public static final String ASSIGNMENT = "assignment";
+	
+	public static final String SCORE = "score";
 
 	private ImageView questionStyleImage;
 
@@ -37,6 +40,8 @@ public class QuestionActivity extends FragmentActivity {
 	private TextView timerText;
 	
 	private Assignment assignment;
+	
+	private GameScore gameScore;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +52,8 @@ public class QuestionActivity extends FragmentActivity {
 		setContentView(R.layout.activity_question);
 		
 		assignment = (Assignment) getIntent().getExtras().getSerializable(ASSIGNMENT);
+		gameScore = (GameScore) getIntent().getExtras().getSerializable(SCORE);
+		
 		ScreenSlidePagerAdapter pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), assignment);
 
 		questionStyleImage = (ImageView) findViewById(R.id.question_style_image);
@@ -61,9 +68,7 @@ public class QuestionActivity extends FragmentActivity {
 			
 			@Override
 			public void onClick(View v) {				
-				Intent intent = new Intent(QuestionActivity.this, CheckKnotActivity.class);
-				intent.putExtra(QuestionActivity.ASSIGNMENT, assignment);
-				startActivity(intent);				
+				goCheckKnot();			
 			}
 		});
 	}
@@ -84,13 +89,19 @@ public class QuestionActivity extends FragmentActivity {
 			protected void onPostExecute(Void result) {
 				super.onPostExecute(result);
 				
-				Intent intent = new Intent(QuestionActivity.this, CheckKnotActivity.class);
-				intent.putExtra(QuestionActivity.ASSIGNMENT, assignment);
-				startActivity(intent);
+				goCheckKnot();
 			}
 			
 		};		
 		timerTask.execute(time);
+	}
+	
+	private void goCheckKnot() {
+		Intent intent = new Intent(QuestionActivity.this, CheckKnotActivity.class);
+		intent.putExtra(QuestionActivity.ASSIGNMENT, assignment);
+		intent.putExtra(QuestionActivity.SCORE, gameScore);
+
+		startActivity(intent);
 	}
 
 	/* (non-Javadoc)

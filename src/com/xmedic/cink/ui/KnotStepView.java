@@ -26,6 +26,10 @@ public class KnotStepView extends RelativeLayout {
 	
 	private ImageButton nextStepButton;
 	
+	private StepInfo stepInfo;
+	
+	private ImageView imageView;
+	
 	public KnotStepView(Context context, StepInfo stepInfo, final ViewPager viewPager) {
 		super(context);
 		
@@ -60,7 +64,17 @@ public class KnotStepView extends RelativeLayout {
 		instructiontext.setTypeface(Util.getCustomFont(context, Util.NOVECENTOWIDE_BOOK));
 		instructiontext.setText(stepInfo.getStepDescription());
 
-		ImageView imageView = (ImageView) knotView.findViewById(R.id.instruction_image);
-		imageView.setImageDrawable(stepInfo.getStepDrawable(context));
+		imageView = (ImageView) knotView.findViewById(R.id.instruction_image);
+		if (stepInfo.isMistake()) {
+			hideAnswer();
+		} else {
+			imageView.setImageDrawable(stepInfo.getStepDrawable(context));
+		}
+		
+		this.stepInfo = stepInfo;
+	}
+	
+	public void hideAnswer() {
+		imageView.setImageResource(R.drawable.wrong_answer);
 	}
 }

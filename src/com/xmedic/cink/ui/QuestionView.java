@@ -1,7 +1,6 @@
 package com.xmedic.cink.ui;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -90,6 +89,8 @@ public abstract class QuestionView extends RelativeLayout {
 	
 	protected abstract void onCorrectAnswer();
 	
+	protected abstract void onIncorrectAnswer();
+	
 	private class ButtonListener implements OnClickListener {
 		
 		private StepInfo stepInfo;
@@ -102,15 +103,10 @@ public abstract class QuestionView extends RelativeLayout {
 		public void onClick(View v) {
 			Button a = (Button) v;
 			if (a.getText().equals(stepInfo.getQuestion().getAnswer())) {
-				a.setTextColor(Color.GREEN);
 				onCorrectAnswer();
 			} else {
-				a.setTextColor(Color.RED);
+				onIncorrectAnswer();
 			}
-			
-//			a.setTypeface(a.getTypeface(), Typeface.BOLD);	
-//			pager.setCurrentItem(pager.getCurrentItem() + 1, true);
-//			viewSwitcher.showNext();
 		}		
 	}
 
