@@ -9,13 +9,15 @@
     <string name="knots">KNOTS</string>
     <string name="desc_background_image">Background image</string>
     <string name="title_activity_choose_domain">ChooseDomainActivity</string>
-    <string name="climbing">CLIMBING</string>
-    <string name="survival">SURVIVAL</string>
+    <string name="climbing">MOUNTAINEERING</string>
+    <string name="survival">SURVIVOR</string>
     <string name="sailing">SAILING</string>
     <string name="title_activity_question">QuestionActivity</string>
     <string name="title_activity_knot_game">KnotGameActivity</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_prepare">PrepareActivity</string>
     <string name="title_activity_chcek_knot">ChcekKnotActivity</string>
+    <string name="title_activity_knot_library">KnotLibraryActivity</string>
+    <string name="title_activity_knot_info">KnotInfoActivity</string>
 
 </resources>

@@ -38,8 +38,7 @@ public class MainActivity extends FullScreenActivity {
 			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
+				startActivity(new Intent(MainActivity.this, KnotLibraryActivity.class));				
 			}
 		});
 	}

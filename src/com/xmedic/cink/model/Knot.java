@@ -6,6 +6,7 @@ package com.xmedic.cink.model;
 import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
@@ -105,5 +106,15 @@ public class Knot implements Serializable {
 		} catch (IOException e) {
 			throw new Error(e);
 		}
+	}
+	
+	public List<HowToStep> getSteps() {
+		List<HowToStep> result = new ArrayList<HowToStep>();
+		
+		for (int i = 0; i < getStepDescriptions().size(); i++) {
+			result.add(new HowToStep(this, i));
+		}
+		
+		return result;
 	}
 }

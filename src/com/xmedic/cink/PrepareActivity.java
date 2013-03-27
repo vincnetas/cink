@@ -37,10 +37,9 @@ public class PrepareActivity extends FullScreenActivity {
 		TextView knotNameText = (TextView) findViewById(R.id.prepare_knot_name_text);
 		knotNameText.setTypeface(Util.getCustomFont(this, Util.NOVECENTOWIDE_BOOK));
 		knotNameText.setText(assignment.getKnot().getName());
-		
-		Button goButton = (Button) findViewById(R.id.prepare_go_buttom);
-		goButton.setTypeface(Util.getCustomFont(this, Util.NOVECENTOWIDE_BOOK));
-		goButton.setOnClickListener(new View.OnClickListener() {
+				
+		View view = findViewById(R.id.prepare_layout);
+		view.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {

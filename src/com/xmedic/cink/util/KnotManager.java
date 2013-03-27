@@ -71,4 +71,14 @@ public class KnotManager {
 		
 		return result;
 	}
+	
+	public List<Knot> getAllKnots(int domain) {
+		List<Knot> result = new ArrayList<Knot>();
+		String[] knotPaths = getKnotPaths(domain);
+		for (String knotPath : knotPaths) {
+			result.add(loadKnot(domain, knotPath));
+		}
+		
+		return result;		
+	}
 }

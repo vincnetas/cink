@@ -19,7 +19,7 @@
             android:src="@drawable/left" />
 
         <ScrollView
-            android:id="@+id/scrollView1"
+            android:id="@+id/knot_info_scroll_view"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="8" >
