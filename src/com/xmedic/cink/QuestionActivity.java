@@ -113,10 +113,7 @@ public class QuestionActivity extends FragmentActivity {
 		
 		timerTask.cancel(true);
 	}
-
-
-
-
+	
 	private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
 		
 		private Assignment assignment;

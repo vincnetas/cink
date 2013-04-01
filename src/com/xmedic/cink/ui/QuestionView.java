@@ -1,5 +1,7 @@
 package com.xmedic.cink.ui;
 
+import java.util.Random;
+
 import android.content.Context;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -80,11 +82,28 @@ public abstract class QuestionView extends RelativeLayout {
 		questionText.setTypeface(Util.getCustomFont(context, Util.NOVECENTOWIDE_BOOK));
 		
 		Question question = stepInfo.getQuestion();
+		String[] options = shuffleAnswers(question.getOptions());
 		questionText.setText(question.getQuestion());
-		button1.setText(question.getOptions()[0]);
-		button2.setText(question.getOptions()[1]);
-		button3.setText(question.getOptions()[2]);
-		button4.setText(question.getOptions()[3]);		
+		button1.setText(options[0]);
+		button2.setText(options[1]);
+		button3.setText(options[2]);
+		button4.setText(options[3]);		
+	}
+	
+	private String[] shuffleAnswers(String[] answers) {
+		String[] result = new String[answers.length];
+		
+		Random random = new Random();
+		for (int i = 0; i < answers.length; i++) {
+			int index = random.nextInt(answers.length);
+			while (result[index] != null) {
+				index = (index + 1) % answers.length;
+			}
+			
+			result[index] = answers[i];
+		}
+		
+		return result;
 	}
 	
 	protected abstract void onCorrectAnswer();
