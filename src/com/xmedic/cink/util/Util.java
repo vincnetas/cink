@@ -44,6 +44,7 @@ public class Util {
 		Assignment assignment = new Assignment();
 		assignment.setKnot(knot);
 		assignment.setQuestions(App.questionManager.getQuestions(domain, knot.getStepDescriptions().size()));
+		assignment.setDomain(domain);
 		
 		return assignment;
 	}

@@ -2,7 +2,6 @@ package com.xmedic.cink;
 
 import java.util.List;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
@@ -10,7 +9,7 @@ import com.xmedic.cink.model.HowToStep;
 import com.xmedic.cink.model.Knot;
 import com.xmedic.cink.ui.KnotStepLibraryView;
 
-public class KnotInfoActivity extends Activity {
+public class KnotInfoActivity extends FullScreenActivity {
 	
 	public static final String KNOT = "knot";
 

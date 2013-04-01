@@ -18,7 +18,7 @@ public class Assignment implements Serializable {
 	
 	private List<Question> questions;	
 	
-	private int domain;
+	private Domain domain;
 	
 	public void setQuestions(List<Question> questions) {
 		this.questions = questions;
@@ -49,11 +49,11 @@ public class Assignment implements Serializable {
 		return knot.getStepDescriptions().size();
 	}
 
-	public int getDomain() {
+	public Domain getDomain() {
 		return domain;
 	}
 
-	public void setDomain(int domain) {
+	public void setDomain(Domain domain) {
 		this.domain = domain;
 	}
 	

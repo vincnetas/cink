@@ -31,23 +31,23 @@
         </activity>
         <activity
             android:name="com.xmedic.cink.ChooseDomainActivity"
-            android:label="@string/title_activity_choose_domain" >
+            android:label="@string/title_activity_choose_domain"
+            android:noHistory="true" >
         </activity>
         <activity
             android:name="com.xmedic.cink.QuestionActivity"
-            android:label="@string/title_activity_question" >
-        </activity>
-        <activity
-            android:name="com.xmedic.cink.KnotGameActivity"
-            android:label="@string/title_activity_knot_game" >
+            android:label="@string/title_activity_question"
+            android:noHistory="true" >
         </activity>
         <activity
             android:name="com.xmedic.cink.PrepareActivity"
-            android:label="@string/title_activity_prepare" >
+            android:label="@string/title_activity_prepare"
+            android:noHistory="true" >
         </activity>
         <activity
             android:name="com.xmedic.cink.CheckKnotActivity"
-            android:label="@string/title_activity_chcek_knot" >
+            android:label="@string/title_activity_chcek_knot"
+            android:noHistory="true" >
         </activity>
         <activity
             android:name="com.xmedic.cink.KnotLibraryActivity"

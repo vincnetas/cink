@@ -52,7 +52,7 @@ public class CheckKnotActivity extends FullScreenActivity {
 			startActivity(intent);
 		} else {			
 			Intent intent = new Intent(CheckKnotActivity.this, PrepareActivity.class);
-			intent.putExtra(QuestionActivity.QUESTION_STYLE, assignment.getDomain());
+			intent.putExtra(QuestionActivity.QUESTION_STYLE, assignment.getDomain().toString());
 			intent.putExtra(QuestionActivity.SCORE, gameScore);
 			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	
