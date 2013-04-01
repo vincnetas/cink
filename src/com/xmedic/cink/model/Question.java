@@ -5,6 +5,8 @@ package com.xmedic.cink.model;
 
 import java.io.Serializable;
 
+import com.xmedic.cink.util.QuestionManager;
+
 /**
  * @author vincentas
  *
@@ -19,14 +21,10 @@ public class Question implements Serializable {
 	
 	private String answer;
 	
-	public Question() {
-		
-	}
+	private QuestionManager questionManager;
 	
-	public Question(String question, String[] options, String answer) {
-		this.question = question;
-		this.options = options;
-		this.answer = answer;
+	public Question(QuestionManager questionManager) {
+		this.questionManager = questionManager;
 	}
 
 	/**
@@ -71,5 +69,17 @@ public class Question implements Serializable {
 		this.answer = answer;
 	}
 	
-	
+	public void setAnswered(boolean correctly) {
+		
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		return question.equals(((Question)o).question);
+	}
+
+	@Override
+	public int hashCode() {
+		return question.hashCode();
+	}
 }

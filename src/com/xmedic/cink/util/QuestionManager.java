@@ -7,7 +7,6 @@ import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 import javax.xml.parsers.SAXParserFactory;
 
@@ -34,7 +33,7 @@ public class QuestionManager {
 		
 		try {		    		    
 		    InputStream inputStream = assetManager.open(getDomainFolder(domain) + File.separator + "questions.xml");
-		    QuestionHander handler = new QuestionHander();
+		    QuestionHander handler = new QuestionHander(this);
 			SAXParserFactory.newInstance().newSAXParser().parse(inputStream, handler);
 			result = handler.getQuestions();
 		} catch (Exception e ) {
@@ -55,16 +54,17 @@ public class QuestionManager {
 		default:
 			throw new Error("Unknowd domain " + domain);
 		}
-}
-
+	}
 	
 	public List<Question> getQuestions(Domain domain, int number) {
 		List<Question> domainQuestions = getDomainQuestions(domain);
+		
 		List<Question> result = new ArrayList<Question>();
-		while (result.size() < number) {
-			result.add(domainQuestions.get(new Random().nextInt(domainQuestions.size())));
+		while (result.size() < number && !domainQuestions.isEmpty()) {
+			Question question = domainQuestions.remove(domainQuestions.size());
+			result.add(question);
 		}
 		
 		return result;
-	}
+	} 
 }

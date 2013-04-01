@@ -11,6 +11,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 import com.xmedic.cink.model.Question;
+import com.xmedic.cink.util.QuestionManager;
 
 /**
  * @author vincentas
@@ -18,6 +19,8 @@ import com.xmedic.cink.model.Question;
  */
 public class QuestionHander extends DefaultHandler {
 
+	private QuestionManager questionManager;
+	
 	private List<Question> questions = new ArrayList<Question>();
 	
 	private Question question;
@@ -26,7 +29,11 @@ public class QuestionHander extends DefaultHandler {
 	
 	public List<Question> getQuestions() {
 		return questions;
-	}	
+	}
+	
+	public QuestionHander(QuestionManager questionManager) {
+		this.questionManager = questionManager;
+	}
 
 	/* (non-Javadoc)
 	 * @see org.xml.sax.helpers.DefaultHandler#startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes)
@@ -36,7 +43,7 @@ public class QuestionHander extends DefaultHandler {
 		stringBuilder.setLength(0);
 		
 		if (isQuestion(localName, qName)) {
-			question = new Question();
+			question = new Question(questionManager);
 		} if (isOptions(localName, qName)) {
 			options.clear();
 		}
