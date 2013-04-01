@@ -57,7 +57,7 @@ public class QuestionActivity extends FragmentActivity {
 		ScreenSlidePagerAdapter pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(), assignment);
 
 		questionStyleImage = (ImageView) findViewById(R.id.question_style_image);
-		questionStyleImage.setImageResource(assignment.getDomain().drawable);
+		questionStyleImage.setImageResource(assignment.getDomain().backgroundDrawable);
 
 		pager = (ViewPager) findViewById(R.id.pager);
 		pager.setAdapter(pagerAdapter);

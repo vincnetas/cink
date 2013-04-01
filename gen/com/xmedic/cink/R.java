@@ -71,17 +71,17 @@ containing a value of this type.
         public static final int wrong_answer=0x7f020011;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0025;
-        public static final int answer_1_button=0x7f0a001f;
-        public static final int answer_2_button=0x7f0a0020;
-        public static final int answer_3_button=0x7f0a0021;
-        public static final int answer_4_button=0x7f0a0022;
-        public static final int button_image=0x7f0a0023;
-        public static final int button_next_question=0x7f0a001e;
-        public static final int button_next_step=0x7f0a001a;
-        public static final int button_previous_question=0x7f0a001d;
-        public static final int button_previous_step=0x7f0a0018;
-        public static final int button_text=0x7f0a0024;
+        public static final int action_settings=0x7f0a0026;
+        public static final int answer_1_button=0x7f0a0020;
+        public static final int answer_2_button=0x7f0a0021;
+        public static final int answer_3_button=0x7f0a0022;
+        public static final int answer_4_button=0x7f0a0023;
+        public static final int button_image=0x7f0a0024;
+        public static final int button_next_question=0x7f0a001f;
+        public static final int button_next_step=0x7f0a001b;
+        public static final int button_previous_question=0x7f0a001e;
+        public static final int button_previous_step=0x7f0a0019;
+        public static final int button_text=0x7f0a0025;
         public static final int chcek_title=0x7f0a0001;
         public static final int check_correct_button=0x7f0a0003;
         public static final int check_wrong_button=0x7f0a0004;
@@ -89,11 +89,12 @@ containing a value of this type.
         public static final int final_knot=0x7f0a0002;
         public static final int home_image=0x7f0a000f;
         public static final int instruction_image=0x7f0a0016;
-        public static final int instruction_text=0x7f0a0019;
+        public static final int instruction_text=0x7f0a001a;
         public static final int knot_info_scroll_view=0x7f0a000d;
-        public static final int knot_item_name=0x7f0a0017;
-        public static final int knot_library_step_image=0x7f0a001c;
-        public static final int knot_step_instruction=0x7f0a001b;
+        public static final int knot_item_name=0x7f0a0018;
+        public static final int knot_library_step_image=0x7f0a001d;
+        public static final int knot_step_instruction=0x7f0a001c;
+        public static final int knot_style_container=0x7f0a0017;
         public static final int knots_button=0x7f0a0011;
         public static final int knots_list_view=0x7f0a000e;
         public static final int pager=0x7f0a000a;

@@ -43,7 +43,7 @@ public class QuestionHander extends DefaultHandler {
 		stringBuilder.setLength(0);
 		
 		if (isQuestion(localName, qName)) {
-			question = new Question(questionManager);
+			question = new Question();
 		} if (isOptions(localName, qName)) {
 			options.clear();
 		}

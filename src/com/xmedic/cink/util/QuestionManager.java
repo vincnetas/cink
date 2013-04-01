@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import javax.xml.parsers.SAXParserFactory;
 
@@ -44,24 +45,19 @@ public class QuestionManager {
 	}
 	
 	private static String getDomainFolder(Domain domain) {
-		switch (domain) {	
-		case MOUNTAINEERING:
-			return "questions" + File.separator + "climbing";
-		case SAILING:
-			return "questions" + File.separator + "sailing";
-		case SURVIVAL:
-			return "questions" + File.separator + "survival";
-		default:
-			throw new Error("Unknowd domain " + domain);
-		}
+		if (domain.equals(Domain.MOUNTAINEERING)) return "questions" + File.separator + "climbing";
+		if (domain.equals(Domain.SAILING)) return "questions" + File.separator + "sailing";
+		if (domain.equals(Domain.SURVIVAL)) return "questions" + File.separator + "survival";
+		throw new Error("Unknowd domain " + domain);
 	}
 	
 	public List<Question> getQuestions(Domain domain, int number) {
 		List<Question> domainQuestions = getDomainQuestions(domain);
 		
+		Random random = new Random();
 		List<Question> result = new ArrayList<Question>();
 		while (result.size() < number && !domainQuestions.isEmpty()) {
-			Question question = domainQuestions.remove(domainQuestions.size());
+			Question question = domainQuestions.remove(random.nextInt(domainQuestions.size()));
 			result.add(question);
 		}
 		
