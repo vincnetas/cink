@@ -1,0 +1,22 @@
+<knot name="Double Figure 8 Loop">
+	<description>Structure: The Double Figure 8 Loop is based on the simple Figure 8 knot. 
+Uses: The two loops can be used as an improvised seat. It is also useful for equalizing the load on two anchors. In one top-roping technique, the loops are made very unequal. The much larger one is passed around both anchor points. The center of this loop is then secured with a carabiner to the small loop. During rappelling, this ensures a more even distribution of load between the two anchor points. 
+Stability: Compared to some of the other double loop knots, e.g., the French Bowline, the Double Loop Figure 8 is stable. It is unlikely to slip so that one loop gets larger at the expense of the other loop. 
+</description>
+	<domains>
+		<domain value="mountaineering"/>
+	</domains>
+	<step></step>
+	<step>With a long bight</step>
+	<step>in the rope use two double</step>
+	<step>loops to tie a</step>
+	<step>Figure 8 knot.</step>
+	<step>Then pass</step>
+	<step>the end</step>
+	<step>of the original bight</step>
+	<step>under,</step>
+	<step>up,</step>
+	<step>and over</step>
+	<step>the whole knot.</step>
+	<step>Pull it tight to lock the two loops.</step>
+</knot>

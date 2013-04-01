@@ -1,0 +1,13 @@
+<knot name="Directional Figure 8 Loop">
+	<description></description>
+	<domains>
+		<domain value="mountaineering"/>
+	</domains>
+	<step></step>
+	<step>Make a loop in the rope.</step> 
+	<step>Pass the loop behind the standing end.</step>
+	<step>Continue around</step>
+	<step>and through</step>
+	<step>the opening beside the tail.</step>
+	<step>The knot is then tightened and dressed so that the outer loop finishes inside its neighbor.</step>
+</knot>

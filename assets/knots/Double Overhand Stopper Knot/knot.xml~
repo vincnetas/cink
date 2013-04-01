@@ -1,0 +1,15 @@
+<knot name="Double Overhand Stopper">
+	<description></description>
+	<domains>
+		<domain value="mountaineering"/>
+		<domain value="sailing"/>
+		<domain value="survival"/>
+	</domains>
+	<step></step>
+	<step>Form a loop</step>
+	<step>in the rope.</step>
+	<step>Pass the end through it.</step>
+	<step>Pass the end through the loop again.</step>
+	<step>Tighten the knot</step>
+	<step>to make a secure stopper knot.</step>
+</knot>

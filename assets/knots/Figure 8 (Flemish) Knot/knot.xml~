@@ -1,0 +1,10 @@
+<knot name="Figure 8" style="Flemish">
+	<description></description>
+	<domains>
+		<domain value="survival"/>
+	</domains>
+	<step></step>
+	<step>Pass the tail over itself to form a loop.</step>
+	<step>Continue under and around the standing end.</step>
+	<step>Complete the knot by passing the tail down through the loop.</step>
+</knot>

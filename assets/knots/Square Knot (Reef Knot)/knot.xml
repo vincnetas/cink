@@ -1,0 +1,19 @@
+<knot name="Square Knot" alternative="Reef Knot">
+	<description>First Knot: The Square (Reef) Knot is usually learned when we tie the laces on our first pair of shoes. Admittedly it is usually a bow that we tie - but the underlying knot is a Square (Reef) Knot. We also learn just how unsatisfactory the knot is. It slips, it comes undone, it jams, and it is all too easy to tie a granny instead which behaves even less well. 
+Purpose: It is intended to be a binding knot and, tied in the right material against a curved surface, the first Half Knot may bind – but it cannot be trusted. That is why surgeons use an extra turn in the first Half Knot – to achieve the binding required while they prepare the second Half Knot.
+Uses: Nevertheless, the Square (Reef) knot has many uses but not where safety is critical, e.g., you can tie a sail cover over a sail; you can tie the string on a gift; and you can tie the laces on your shoes (if they still come with laces). It is also one of the many knots used in macrame. More importantly, the experience of tying a Square Knot teaches the fundamental process of tying a Half Knot or Half Hitch. 
+Variations: When the Square (Reef) Knot is used it is common to add additional Half Knots as security - a tribute to how unsatisfactory a knot it is. A better alternative may be to use two Surgeon's Half Knots, which make better binding knots for each stage and a secure final knot. When the second Half Surgeon's Knots is tied as a bow, it makes a Secure Shoelace Bow. 
+The Square (Reef) knot can also be tied using bights (loops). For example, to use up long shoelaces, the knot can be tied with loops from the start. This means the final "bow" cannot be untied by pulling the ends - but it makes a secure knot. 
+</description>
+	<domains>
+		<domain value="sailing"/>
+		<domain value="survival"/>
+	</domains>
+	<step></step>
+	<step>Take two ropes and cross them (brown over green)</step>
+	<step>to form</step>
+	<step>a half knot.</step>
+	<step>Cross them a second time (brown over green again)</step>
+	<step>and pull the ends tight</step>
+	<step>to form the Square Knot.</step>
+</knot>

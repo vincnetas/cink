@@ -1,0 +1,19 @@
+<knot name="Double Overhand Stopper">
+	<description>Uses: The Double Overhand Knot is based on the Overhand Knot with one additional turn. It creates a reliable, moderately large, stopper knot. 
+Alternative Method: In addition to the technique shown in the animation, the Double Overhand can also be tied by threading the end of the rope through the coil as shown here. 
+The Double Overhand Knot provides the basis for tying other useful knots such as the Double Fisherman's Knot and the Poacher's Knot or Double Overhand Noose. 
+Other Stopper Knots: The Figure 8 may be the most widely used, especially in boating, but it tends to come undone. The Ashley Stopper Knot deserves to be more widely used and known. The Matthew Walker requires three or four strand rope because it is tied with the separated strands. Therefore, after the strands are reassembled and whipped it cannot be just "untied". Its greatest use may be in smart installations such as rope handrails. 
+</description>
+	<domains>
+		<domain value="mountaineering"/>
+		<domain value="sailing"/>
+		<domain value="survival"/>
+	</domains>
+	<step></step>
+	<step>Form a loop</step>
+	<step>in the rope.</step>
+	<step>Pass the end through it.</step>
+	<step>Pass the end through the loop again.</step>
+	<step>Tighten the knot</step>
+	<step>to make a secure stopper knot.</step>
+</knot>

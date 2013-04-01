@@ -1,0 +1,14 @@
+<knot name="Slip Knot Tying">
+	<description>Uses: The slip knot is identical in structure to the Noose Knot except that the bight to be inserted is formed from the short end – not the long. It is one of the most frequently tied knots - being used in knitting as the first loop when casting on – where it is called a slip knot but frequently tied as a noose. It can be used as a temporary stopper knot - as shown in the animation. 
+Confusion: Some writers apply the term "Slip Knot" to other knots - where any loop slides along the standing end. However, such knots also have well known other names, e.g., Bowline on a Bight and various fishing knots that can be slid to tighten. Moreover, such knots do NOT function as Slip Knots. Because they tighten under load, they actually function as nooses. For this reason, the generic misuse of the name Slip Knots is deplored. On this website Slip Knot is reserved for this one knot. 
+Slipped Knots: Many knots can be completed with a bight instead of the end. A knot tied this way is described as slipped, e.g., a Slipped Rolling Hitch. Slipped Buntline Hitch, Slipped Half Hitch. Theoretically, the knot can then be quickly untied by pulling on the free end to release the bight. In practice, this depends on how much load has reached the bight. With some tightly loaded knots, e.g., a Buntline Hitch, it can be difficult to release and almost impossible to pull the final curve of the bight itself out of the tightened turn. </description>
+	<domains>
+		<domain value="survival"/>
+	</domains>
+	<step></step>
+	<step>Form a loop</step>
+	<step>in the end of the rope.</step> 
+	<step>Prepare a bight in the short end.</step>
+	<step>Tuck the bight through the loop and tighten. The knot can be used as temporary stopper knot.</step>
+
+</knot>

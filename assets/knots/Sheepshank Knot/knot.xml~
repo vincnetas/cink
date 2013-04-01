@@ -1,0 +1,14 @@
+<knot name="Sheepshank Knot">
+	<description></description>
+	<domains>
+		<domain value="survival"/>
+	</domains>
+	<step>Fold the rope</step>
+	<step>to approximately the desired new length.</step>
+	<step>Form a Half Hitch in one standing end,</step>
+	<step>drop it over the adjacent bight,</step>
+	<step>and tighten it.</step>
+	<step>Form a Half Hitch in the other standing end,</step>
+	<step>drop it over its adjacent bight,</step>
+	<step>and then tighten it too. Apply the load carefully.</step>
+</knot>

@@ -1,0 +1,20 @@
+<knot name="Sheepshank Knot">
+	<description>Avoid Using It: The Sheepshank should never be used. It is only included here because Boy Scouts used to be required to learn it. Ashley described Sheepshanks but cautioned that they "......should be seized or otherwise secured to make them safe unless the need is very temporary...." 
+Failure Under Load: Some modern synthetic materials tend to be flexible and slippery. The illustration here shows a correctly tied sheepshank failing under modest load. This is a piece of three strand nylon rope and this failure was reproduced easily and repeatedly. 
+Eliminate It: If you are asked to learn to tie the Sheepshank, please request your Troop Leader to eliminate this knot and replace it with something safe and useful, e.g., the Alpine Butterfly Loop is an excellent way of creating a loop in the middle of a length of rope and can also be safely used to shorten a rope. 
+Bellringer's Knot: Bellringer's use just one end of a Sheepshank to keep the tail of the rope off the ground when not being used. 
+Practical Limitations: In practice, the Sheepshank would be almost impossible to tie under load; shortening one end and re-securing the line would be preferable. As a knot, it cannot pass through blocks or sheaves. 
+In the critical environments presented by climbing, search and rescue, and boating, there are no applications where the Sheepshank would offer an acceptable solution. 
+Substitution: One suggested use for the Sheepshank is the protection of a damaged or weakened piece of rope. A more secure alternative is the Alpine Butterfly Loop. </description>
+	<domains>
+		<domain value="survival"/>
+	</domains>
+	<step>Fold the rope</step>
+	<step>to approximately the desired new length.</step>
+	<step>Form a Half Hitch in one standing end,</step>
+	<step>drop it over the adjacent bight,</step>
+	<step>and tighten it.</step>
+	<step>Form a Half Hitch in the other standing end,</step>
+	<step>drop it over its adjacent bight,</step>
+	<step>and then tighten it too. Apply the load carefully.</step>
+</knot>

@@ -6,8 +6,6 @@ package com.xmedic.cink.model;
 import java.io.Serializable;
 import java.util.List;
 
-import com.xmedic.cink.R;
-
 /**
  * @author vincent
  *
@@ -15,12 +13,6 @@ import com.xmedic.cink.R;
 public class Assignment implements Serializable {
 	
 	private static final long serialVersionUID = -2265358542471172247L;
-
-	public static final int STYLE_CLIMBING = R.drawable.climbing;
-
-	public static final int STYLE_SURVIVAL = R.drawable.survival;
-
-	public static final int STYLE_SAILING = R.drawable.sailing;
 	
 	private Knot knot;
 	

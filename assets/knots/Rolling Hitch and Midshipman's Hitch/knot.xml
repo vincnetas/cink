@@ -1,0 +1,22 @@
+<knot name="Rolling Hitch Tying">
+	<description>Description: The Rolling Hitch Ashley Version 2 attaches a rope (usually smaller) to another (usually larger) when the line of pull is almost parallel. To attach a rope to a pole see Version 1 below. 
+Uses: The Rolling Hitch is useful to take the strain off a rope with a foul turn on a winch. It can also make an adjustable loop in the end of a rope to act as a spring line to a dock. It can be used to relieve the strain on a hawser while the "Bitter End" is transferred to the "Bitts" but the Rat-Tail Stopper is better. When used to make a Midshipman's Hitch it forms an adjustable loop with many uses, e.g., on small sailing boats it is successfully used as a boom-vang and, at home, it makes an adjustable Clothesline Hitch. 
+Under Load: The Rolling Hitch is one of the few knots which can be tied and untied with load on. It does not bind and, when tied correctly, does not slip. However, in critical applications some authorities recommend using the tail end to tie a second Rolling Hitch to back up the first. 
+Overboard: The Rolling Hitch has been promoted as the only knot to tie in the following unlikely but critical circumstance: while sailing alone you fall overboard and catch hold of the line which you have prudently left trailing astern and find yourself hanging on with difficulty. Before you tire, you manage to bring the bitter end of the rope around your back. You then have to tie a suitable knot to make a loop around you. A bowline cannot be tied under load. Two Half Hitches will slide and constrict you. The Rolling Hitch is the answer. Even as the second turn is tucked "up" into the correct place, the major strain is taken and the final Half Hitch can be tied with less urgency. 
+</description>
+	<domains>
+		<domain value="sailing"/>
+		<domain value="survival"/>
+	</domains>
+	<step></step>
+	<step>Pass the end around the main (red???) rope</step>
+	<step>to make a Half Hitch.</step>
+	<step>Continue around</step>
+	<step>going over the first turn.</step>
+	<step>Tuck the rope between the standing end and the first turn.</step>
+	<step>Tighten to make it secure (this introduces a slight dog-leg in the main rope).</step>
+	<step>Continue around</step>
+	<step>to add</step>
+	<step>a final</step>
+	<step>Half Hitch.</step>
+</knot>

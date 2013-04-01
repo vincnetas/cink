@@ -1,0 +1,14 @@
+<knot name="Square Knot" alternative="Reef Knot">
+	<description></description>
+	<domains>
+		<domain value="sailing"/>
+		<domain value="survival"/>
+	</domains>
+	<step></step>
+	<step>Take two ropes and cross them (brown over green)</step>
+	<step>to form</step>
+	<step>a half knot.</step>
+	<step>Cross them a second time (brown over green again)</step>
+	<step>and pull the ends tight</step>
+	<step>to form the Square Knot.</step>
+</knot>

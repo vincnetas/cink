@@ -1,0 +1,18 @@
+<knot name="Figure 8 Bend" style="Flemish Bend">
+	<description>Uses: The Figure 8 provides a quick and convenient stopper knot to prevent a line sliding out of sight, e.g., up inside the mast. Its virtue is that, even after it has been jammed tightly against a block, it doesn't bind; it can be undone easily. This virtue is also, occasionally, a vice. The figure 8 can fall undone and then has to be retied. 
+Comparison: The Figure 8 should be compared to other common stopper knots. It is much better than the simple Overhand Knot which is smaller and can bind so tightly that it can be really difficult to undo. However, both the Double Overhand Knot, and the Ashley Stopper Knot, make better Stopper knots because they are larger and more stable. 
+Climbing: For climbing, where safety is paramount, the Double Overhand is the preferred Stopper knot. However, the Figure 8 is important to climbers because it is the basis for tying the Figure 8 Bend (Rope Join), the Figure 8 Loop Follow Through, and the Double Figure 8 Loop. </description>
+	<domains>
+		<domain value="mountaineering"/>
+	</domains>
+	<step>Start by tying a loose Figure 8 knot</step>
+	<step>in one of the ropes.</step>
+	<step>Follow the same path in reverse</step>
+	<step>with the other rope,</step>
+	<step>starting beside</step>
+	<step>the tail</step>
+	<step>and</step>
+	<step>exiting beside</step>
+	<step>the standing end.</step>
+	<step>Tighten the knot.</step>
+</knot>

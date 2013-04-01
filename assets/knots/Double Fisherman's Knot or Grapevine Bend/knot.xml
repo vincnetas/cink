@@ -1,0 +1,28 @@
+<knot name="Double Fisherman's" alternative="Grapevine Bend">
+	<description>Structure: The Double Fisherman's, or Grapevine, Bend consists of two Strangle Knots (like double overhand knots) each tied round the other standing end. However, because it is created around another line, this structure may not be obvious. 
+Safety: For load-bearing using modern high modulus ropes such as Spectra, Dyneema or Kevlar/Technora, use a Triple Fisherman's. In each stopper knot the rope is passed around a third time before being threaded back through the loops. The triple, or even quadruple, version is also used by fishermen to join two lengths of fishing line. 
+Uses: The Double Fisherman's Knot (Grapevine Bend) is the way to join two ends of a line to form a Prusik Loop and is also an excellent and reliable way of joining two climbing ropes. It can be used for a full rope-length abseil; after which it should still be possible to retrieve the rope. 
+Inspection: The Double Fisherman's Knot (Grapevine Bend) is not complicated. Nevertheless, it can be tied wrongly and then fail. If you tie it and your life depends on it, inspect it carefully. If someone else ties it, inspect it extremely carefully. 
+Pros: The Double Fisherman's is a well known, reliable, compact knot suitable for use when retrieving an abseil. 
+Cons: The Double Fisherman can lock up so tightly that it is effectively welded. Although it is regarded as a standard method of joining climbing ropes, the Zeppelin Bend performs the same task but is much easier to undo because it does not jam. The Figure 8 Bend may be bulkier - especially when stopper knots are added for safety. It is however, relatively easy to teach and inspect. </description>
+	<domains>
+		<domain value="mountaineering"/>
+		<domain value="survival"/>
+	</domains>
+	<step>Overlap the two ends.</step>
+	<step>Wrap one end</step>
+	<step>around</step>
+	<step>both</step>
+	<step>ropes</step>
+	<step>two full turns.</step>
+	<step>Then pass this end back</step>
+	<step>through these turns</step>
+	<step>and pull tight.</step>
+	<step>Next pass the other end</step>
+	<step>two full turns</step>
+	<step>around</step>
+	<step>both ropes.</step>
+	<step>Pass this end back through</step>
+	<step>and pull tight.</step>
+	<step>Pull on both ropes to tighten the two knots against each other.</step>
+</knot>

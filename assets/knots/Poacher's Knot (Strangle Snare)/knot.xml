@@ -1,0 +1,16 @@
+<knot name="Poacher's Knot" alternative="Strangle Snare">
+	<description>History: The Poacher's Knot is described by Ashley as made of horsehair and used to trap Woodcock or Partridge. It is hard to imagine using either the material or the technique today. 
+Names: The Poacher's is also known as a Strangle Snare and a Double Overhand Noose – because the knot tied round the standing end is known as a Strangle Knot and as a Double Overhand knot.  
+High Modulus Ropes: The Poacher's Knot is one of the few knots suitable for use with new ropes such as Dyneema and Spectra. Bowlines and other familiar loop knots may not be secure with these slippery high modulus ropes and may pull undone, e.g., at loads as low as 15 - 20% of the rope's breaking strain. 
+Stronger Alternative: Ashley also describes the Scaffold Knot which is a similar knot with an extra turn, sometimes called a Triple Overhand Noose. Occasionally, people refer to the Poacher's as a Double, or Two-Turn, Scaffold. 
+</description>
+	<domains>
+		<domain value="sailing"/>
+	</domains>
+	<step>Form a bight in the end of the rope.</step>
+	<step>Loosely wrap</step>
+	<step>the end around the bight</step>
+	<step>twice.</step>
+	<step>Tuck the end through these turns to complete the knot.</step>
+	<step>Pull tight.</step>
+</knot>

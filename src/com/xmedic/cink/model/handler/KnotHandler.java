@@ -10,6 +10,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import com.xmedic.cink.model.Domain;
 import com.xmedic.cink.model.Knot;
 
 /**
@@ -36,6 +37,9 @@ public class KnotHandler extends DefaultHandler {
 		if (isKnot(localName, qName)) {
 			knot = new Knot(attributes.getValue("name"), attributes.getValue("style"));
 			steps = new ArrayList<String>();
+		} else if (isDomain(localName, qName)) {
+			Domain domain = Domain.valueOf(attributes.getValue("value").toUpperCase());
+			knot.addDomain(domain);
 		}
 	}
 
@@ -48,7 +52,9 @@ public class KnotHandler extends DefaultHandler {
 			steps.add(getText());
 		} else if (isKnot(localName, qName)) {
 			knot.setStepDescriptions(steps);
-		} 
+		} else if (isDescription(localName, qName)) {
+			knot.setDescription(getText());
+		}
 	}
 	
 	private boolean isStep(String localName, String qName) {
@@ -58,7 +64,14 @@ public class KnotHandler extends DefaultHandler {
 	private boolean isKnot(String localName, String qName) {
 		return "knot".equals(localName);
 	}
+	
+	private boolean isDescription(String localName, String qName) {
+		return "description".equals(localName);
+	}
 
+	private boolean isDomain(String localName, String qName) {
+		return "domain".equals(localName);
+	}
 
 	private StringBuilder stringBuilder = new StringBuilder();
 	

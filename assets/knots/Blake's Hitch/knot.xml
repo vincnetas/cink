@@ -1,0 +1,19 @@
+<knot name="Blake's Hitch" style="Bend Tying">
+	<description>Uses: Blake's Hitch is a Friction, or Slide and Grip, hitch. It is used by arborists for ascent and descent. Like other Slide and Grip Knots, the strain should only be taken on the line below the hitch. Blake's Hitch itself should not be used for traction because pulling directly on the hitch loosens it and allows descent – unexpected and uncontrolled. 
+History: Blake's Hitch was first described by Heinz Prohaska in an Austrian Guides Periodical in 1981 and then again in the Nylon Highway #30 in May 1990. However Jason Blake described it in a letter to the Arbor Age in 1994. It is now widely known as Blake's Hitch and this name is used here. 
+Pros and Cons: Like the Rolling Hitch, Blake's has the advantage that it can be tied in the end of a piece of rope instead of requiring a Prusik Loop. In practice it is a stable knot which does not creep or roll along the rope. </description>
+	<domains>
+		<domain value="mountaineering"/>
+	</domains>
+	<step>Wrap the end</step>
+	<step>of the</step>
+	<step>line</step>
+	<step>four</step>
+	<step>times</step>
+	<step>around</step>
+	<step>the climbing</step>
+	<step>rope</step>
+	<step>Bring the end back down, around itself, </step>
+	<step>and tuck it behind the climbing rope and under the first two turns so that it exits in the middle.</step>
+	<step>Tighten to achieve a tight, neat, knot.</step>
+</knot>

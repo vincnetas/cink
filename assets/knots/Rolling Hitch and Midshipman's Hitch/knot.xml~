@@ -1,0 +1,18 @@
+<knot name="Rolling Hitch Tying">
+	<description></description>
+	<domains>
+		<domain value="sailing"/>
+		<domain value="survival"/>
+	</domains>
+	<step></step>
+	<step>Pass the end around the main (red???) rope</step>
+	<step>to make a Half Hitch.</step>
+	<step>Continue around</step>
+	<step>going over the first turn.</step>
+	<step>Tuck the rope between the standing end and the first turn.</step>
+	<step>Tighten to make it secure (this introduces a slight dog-leg in the main rope).</step>
+	<step>Continue around</step>
+	<step>to add</step>
+	<step>a final</step>
+	<step>Half Hitch.</step>
+</knot>

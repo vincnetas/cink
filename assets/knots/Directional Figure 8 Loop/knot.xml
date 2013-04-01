@@ -1,0 +1,17 @@
+<knot name="Directional Figure 8 Loop">
+	<description>Uses: Ashley describes the Directional Figure 8 as the second of two examples of a "Single Bowline on the Bight". It creates a loop in the middle of a rope and is used as a load-bearing knot by climbers to take strain in one direction only. In fact a strain from the wrong end actually capsizes the knot into one that slides, i.e., it functions as a noose so that the loop tightens under load. 
+Similar Knots: Several other knots create a loop in the middle of a piece of rope including the Alpine Butterfly Loop, the Bowline on a Bight, the Figure 8 Double Loop and, for fishing, the Dropper Loop. 
+Advantages: The Directional Figure 8 is quickly tied and is designed to take a load in one direction only. 
+Disadvantages: The Directional Figure 8 can be difficult to undo after a shock load. It must not be used with the pull coming from the wrong end because of its propensity to capsize and constrict. For critical loads and when the load may be applied from either end, the Alpine Butterfly Loop is preferred. 
+</description>
+	<domains>
+		<domain value="mountaineering"/>
+	</domains>
+	<step></step>
+	<step>Make a loop in the rope.</step> 
+	<step>Pass the loop behind the standing end.</step>
+	<step>Continue around</step>
+	<step>and through</step>
+	<step>the opening beside the tail.</step>
+	<step>The knot is then tightened and dressed so that the outer loop finishes inside its neighbor.</step>
+</knot>

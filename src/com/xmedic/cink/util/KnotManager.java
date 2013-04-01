@@ -7,11 +7,14 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import javax.xml.parsers.SAXParserFactory;
 
+import com.xmedic.cink.model.Domain;
 import com.xmedic.cink.model.Knot;
 import com.xmedic.cink.model.handler.KnotHandler;
 
@@ -22,6 +25,8 @@ import android.content.res.AssetManager;
  *
  */
 public class KnotManager {
+	
+	private Map<Domain, List<Knot>> knots;
 
 	private final AssetManager assetManager;
 	
@@ -29,12 +34,33 @@ public class KnotManager {
 		this.assetManager = assetManager;
 	}
 	
-	private String[] getKnotPaths(int domain) {		
+	private synchronized Map<Domain, List<Knot>> getKnots() {
+		if (knots == null) {
+			knots = new HashMap<Domain, List<Knot>>();
+			
+			for (String path : getKnotPaths()) {
+				Knot knot = loadKnot(path);
+				for (Domain domain : knot.getDomains()) {
+					List<Knot> list = knots.get(domain);
+					if (list == null) {
+						list = new ArrayList<Knot>();
+						knots.put(domain, list);
+					}
+					
+					list.add(knot);
+				}
+			}
+		}
+		
+		return knots;
+	}
+	
+	private String[] getKnotPaths() {		
 		List<String> result = new ArrayList<String>();
 		
 		try {
-			String knotsPath = Util.getDomainFolder(domain) + File.separator + "knots";
-			String[] knots = assetManager.list(knotsPath);
+			String knotsPath = "knots";
+			String[] knots = assetManager.list("knots");
 			for (String knot : knots) {
 				String[] list = assetManager.list(knotsPath + File.separator + knot);
 				for (String item : list) {
@@ -50,12 +76,12 @@ public class KnotManager {
 		return result.toArray(new String[result.size()]);
 	}
 	
-	public Knot getKnot(int domain) {
-		String[] knotPaths = getKnotPaths(domain);
-		return loadKnot(domain, knotPaths[new Random().nextInt(knotPaths.length)]);		
+	public Knot getKnot(Domain domain) {
+		List<Knot> list = getKnots().get(domain);
+		return list.get(new Random().nextInt(list.size()));	
 	}
 	
-	private Knot loadKnot(int domain, String path) {
+	private Knot loadKnot(String path) {
 		Knot result;
 		
 		try {		    		    
@@ -64,7 +90,6 @@ public class KnotManager {
 			SAXParserFactory.newInstance().newSAXParser().parse(inputStream, handler);
 			result = handler.getKnot();
 			result.setKnotPath(path);
-			result.setDomain(domain);
 		} catch (Exception e ) {
 			throw new Error(e);
 		}
@@ -72,13 +97,7 @@ public class KnotManager {
 		return result;
 	}
 	
-	public List<Knot> getAllKnots(int domain) {
-		List<Knot> result = new ArrayList<Knot>();
-		String[] knotPaths = getKnotPaths(domain);
-		for (String knotPath : knotPaths) {
-			result.add(loadKnot(domain, knotPath));
-		}
-		
-		return result;		
+	public List<Knot> getAllKnots(Domain domain) {
+		return getKnots().get(domain);
 	}
 }

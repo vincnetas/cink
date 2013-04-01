@@ -1,0 +1,23 @@
+<knot name="Double Fisherman's" alternative="Grapevine Bend">
+	<description></description>
+	<domains>
+		<domain value="mountaineering"/>
+		<domain value="survival"/>
+	</domains>
+	<step>Overlap the two ends.</step>
+	<step>Wrap one end</step>
+	<step>around</step>
+	<step>both</step>
+	<step>ropes</step>
+	<step>two full turns.</step>
+	<step>Then pass this end back</step>
+	<step>through these turns</step>
+	<step>and pull tight.</step>
+	<step>Next pass the other end</step>
+	<step>two full turns</step>
+	<step>around</step>
+	<step>both ropes.</step>
+	<step>Pass this end back through</step>
+	<step>and pull tight.</step>
+	<step>Pull on both ropes to tighten the two knots against each other.</step>
+</knot>

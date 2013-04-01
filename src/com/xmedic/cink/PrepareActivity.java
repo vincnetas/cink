@@ -1,14 +1,14 @@
 package com.xmedic.cink;
 
-import com.xmedic.cink.model.Assignment;
-import com.xmedic.cink.model.GameScore;
-import com.xmedic.cink.util.Util;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
+
+import com.xmedic.cink.model.Assignment;
+import com.xmedic.cink.model.Domain;
+import com.xmedic.cink.model.GameScore;
+import com.xmedic.cink.util.Util;
 
 public class PrepareActivity extends FullScreenActivity {
 
@@ -22,7 +22,7 @@ public class PrepareActivity extends FullScreenActivity {
 		setContentView(R.layout.activity_prepare);
 		
 		Bundle extras = getIntent().getExtras();
-		int domain = extras.getInt(QuestionActivity.QUESTION_STYLE);
+		Domain domain = Domain.valueOf(extras.getString(QuestionActivity.QUESTION_STYLE));
 		if (extras.containsKey(QuestionActivity.SCORE)) {
 			gameScore = (GameScore) extras.getSerializable(QuestionActivity.SCORE);
 		} else {

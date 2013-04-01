@@ -1,0 +1,19 @@
+<knot name="Double Figure 8 Loop">
+	<description></description>
+	<domains>
+		<domain value="mountaineering"/>
+	</domains>
+	<step></step>
+	<step>With a long bight</step>
+	<step>in the rope use two double</step>
+	<step>loops to tie a</step>
+	<step>Figure 8 knot.</step>
+	<step>Then pass</step>
+	<step>the end</step>
+	<step>of the original bight</step>
+	<step>under,</step>
+	<step>up,</step>
+	<step>and over</step>
+	<step>the whole knot.</step>
+	<step>Pull it tight to lock the two loops.</step>
+</knot>

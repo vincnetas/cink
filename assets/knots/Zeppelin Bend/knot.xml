@@ -1,0 +1,19 @@
+<knot name="Zeppelin Bend">
+	<description>Uses: The Zeppelin Bend is one of the bends employing interlocking overhand knots. It is a reliable bend that can be untied even after being heavily loaded but not, however, while still under load. It is an excellent alternative to the more widely used Double Fisherman's because it eliminates the risk of jamming. 
+History: The Zeppelin Bend has been described as used to secure Airships. Vice Admiral Charles Rosendahl, Commanding Officer of the American Zeppelin (Los Angeles/ZR3), was supposed to have insisted that the knot be used to moor his airship. Doubt has now been cast on both the use and the authorship. 
+Tying it: The arrangement of the interlocking loops and the path of the ends through the center are critical. Although the Zeppelin is secure and can be untied easily, its similarity to other bends employing interlocking overhand knots risks confusion - and mistakes. For this reason we also recommend the Alpine Butterfly Bend tied using the same technique employed for the Alpine Butterfly Loop. Technique is critical because Roo emphasizes the risk of creating an Evil Impostor when tied incorrectly. 
+Advantages: The Zeppelin Bend is reliable with very little tendency to slip or bind. Testing by Roo found the knot to be exceptionally secure and shake-resistant in all materials. In this respect he regards it as superior to the Alpine Butterfly Bend. 
+Disadvantages: Attention to tying it correctly is critical. After it is tied, it can be hard to distinguish it from the less satisfactory Hunter's Bend. </description>
+	<domains>
+		<domain value="mountaineering"/>
+		<domain value="sailing"/>
+	</domains>
+	<step>Form a bight in both ropes</step>
+	<step>and overlap them.</step>
+	<step>Pass each end around across itself - going over for the top bight and under for the bottom bight.</step>
+	<step>Thread both ends</step>
+	<step>past each other</step>
+	<step>through</step>
+	<step>the middle.</step>
+	<step>Tighten to form the Zeppelin Bend.</step>
+</knot>

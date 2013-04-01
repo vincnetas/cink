@@ -13,6 +13,7 @@ import javax.xml.parsers.SAXParserFactory;
 
 import android.content.res.AssetManager;
 
+import com.xmedic.cink.model.Domain;
 import com.xmedic.cink.model.Question;
 import com.xmedic.cink.model.handler.QuestionHander;
 
@@ -28,11 +29,11 @@ public class QuestionManager {
 		this.assetManager = assetManager;
 	}
 	
-	private List<Question> getDomainQuestions(int domain) {
+	private List<Question> getDomainQuestions(Domain domain) {
 		List<Question> result = new ArrayList<Question>();
 		
 		try {		    		    
-		    InputStream inputStream = assetManager.open(Util.getDomainFolder(domain) + File.separator + "questions.xml");
+		    InputStream inputStream = assetManager.open(getDomainFolder(domain) + File.separator + "questions.xml");
 		    QuestionHander handler = new QuestionHander();
 			SAXParserFactory.newInstance().newSAXParser().parse(inputStream, handler);
 			result = handler.getQuestions();
@@ -43,7 +44,21 @@ public class QuestionManager {
 		return result;
 	}
 	
-	public List<Question> getQuestions(int domain, int number) {
+	private static String getDomainFolder(Domain domain) {
+		switch (domain) {	
+		case MOUNTAINEERING:
+			return "questions" + File.separator + "climbing";
+		case SAILING:
+			return "questions" + File.separator + "sailing";
+		case SURVIVAL:
+			return "questions" + File.separator + "survival";
+		default:
+			throw new Error("Unknowd domain " + domain);
+		}
+}
+
+	
+	public List<Question> getQuestions(Domain domain, int number) {
 		List<Question> domainQuestions = getDomainQuestions(domain);
 		List<Question> result = new ArrayList<Question>();
 		while (result.size() < number) {

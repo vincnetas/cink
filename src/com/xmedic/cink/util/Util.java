@@ -1,16 +1,15 @@
 package com.xmedic.cink.util;
 
-import java.io.File;
 import java.util.Map;
 import java.util.WeakHashMap;
 
 import android.content.Context;
-import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.util.Log;
 
 import com.xmedic.cink.App;
 import com.xmedic.cink.model.Assignment;
+import com.xmedic.cink.model.Domain;
 import com.xmedic.cink.model.Knot;
 
 public class Util {
@@ -39,22 +38,12 @@ public class Util {
 	}
 
 	public static final String NOVECENTOWIDE_BOOK = "Novecentowide-Book";
-	
-	public static String getDomainFolder(int domain) {
-		switch (domain) {
-		case Assignment.STYLE_CLIMBING: return "domain" + File.separator + "climbing";
-		case Assignment.STYLE_SAILING: return "domain" + File.separator + "sailing";
-		case Assignment.STYLE_SURVIVAL: return "domain" + File.separator + "survival";
-		default: throw new Error("Unknowd domain " + domain);
-		}
-	}
-	
-	public static Assignment getAssignemnt(int domain) {
+		
+	public static Assignment getAssignemnt(Domain domain) {
 		Knot knot = App.knotManager.getKnot(domain);
 		Assignment assignment = new Assignment();
 		assignment.setKnot(knot);
 		assignment.setQuestions(App.questionManager.getQuestions(domain, knot.getStepDescriptions().size()));
-		assignment.setDomain(domain);
 		
 		return assignment;
 	}

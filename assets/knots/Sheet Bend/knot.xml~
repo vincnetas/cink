@@ -1,0 +1,12 @@
+<knot name="Sheet Bend">
+	<description></description>
+	<domains>
+		<domain value="sailing"/>
+		<domain value="survival"/>
+	</domains>
+	<step>Form a loop in the thicker rope (green) and hold it in one hand.</step>
+	<step>Pass the thinner rope (brown)</step>
+	<step>through the loop</step>
+	<step>and behind the (green) tail and standing ends in that order.</step>
+	<step>Finally, tuck the smaller rope under itself to finish the knot.</step>
+</knot>

@@ -7,7 +7,9 @@ import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -28,8 +30,10 @@ public class Knot implements Serializable {
 	
 	private String style;
 	
-	private int domain;
+	private String description;
 	
+	private Set<Domain> domains = new HashSet<Domain>();
+		
 	public Knot(String name, String style) {
 		this.name = name;
 		this.style = style;
@@ -90,14 +94,6 @@ public class Knot implements Serializable {
 	public void setKnotPath(String knotPath) {
 		this.knotPath = knotPath;
 	}
-
-	public int getDomain() {
-		return domain;
-	}
-
-	public void setDomain(int domain) {
-		this.domain = domain;
-	}
 	
 	public Drawable getFinalKnot(Context context) {
 		try {
@@ -116,5 +112,21 @@ public class Knot implements Serializable {
 		}
 		
 		return result;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	public void addDomain(Domain domain) {
+		domains.add(domain);
+	}
+	
+	public Set<Domain> getDomains() {
+		return domains;
 	}
 }

@@ -1,0 +1,17 @@
+<knot name="Bowline knot" style="Bend Tying">
+	<description>Uses: The Bowline makes a reasonably secure loop in the end of a piece of rope. It has many uses, e.g., to fasten a mooring line to a ring or a post. Under load, it does not slip or bind. With no load it can be untied easily. Two bowlines can be linked together to join two ropes. Its principal shortcoming is that it cannot be tied, or untied, when there is a load on the standing end. It should therefore be avoided when, for example, a mooring line may have to be released under load. 
+Name: The name Bowline derives from "bow line". The Bow Line Knot secured the line holding the weather leech of a square sail forward to prevent it being taken aback. 
+One Handed: The bowline can be tied with one hand - useful if injured, essential if you are using the other hand to hold on to the line or the boat! </description>
+	<domains>
+		<domain value="mountaineering"/>
+		<domain value="sailing"/>
+		<domain value="survival"/>
+	</domains>
+	<step></step>
+	<step>Form a small loop leaving enough rope for the desired loop size. </step>
+	<step>Pass the end of the rope through the loop </step>
+	<step>as though making an overhand knot. </step>
+	<step>Continue around the standing end</step>
+	<step>and then back </step>
+	<step>through the small loop.</step>
+</knot>

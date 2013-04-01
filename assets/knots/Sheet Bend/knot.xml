@@ -1,0 +1,15 @@
+<knot name="Sheet Bend">
+	<description>Uses: The Sheet Bend is recommended for joining two ropes of unequal size. The thicker rope must be used for the simple bight as shown. It works equally well if the ropes are of the same size. 
+Tying it: The Sheet Bend would replace the Square (Reef) knot except for the awkward fact that it is not a binding knot – it has to be tied with both ends loose in your hands with no load on the ropes (The Square Knot - with all its faults - can be tied tight against a sail, or parcel, and usually stays tight while the second Half Hitch is tied). 
+Double Sheet Bend: When the ropes are markedly different in size, the tail of the smaller rope can be taken twice round the bight in the larger rope to create the double sheet bend. 
+Structure: When correctly tied the two tails lie on the same side of the knot. The alternative version - with the tails on opposite sides - is less reliable. </description>
+	<domains>
+		<domain value="sailing"/>
+		<domain value="survival"/>
+	</domains>
+	<step>Form a loop in the thicker rope (green) and hold it in one hand.</step>
+	<step>Pass the thinner rope (brown)</step>
+	<step>through the loop</step>
+	<step>and behind the (green) tail and standing ends in that order.</step>
+	<step>Finally, tuck the smaller rope under itself to finish the knot.</step>
+</knot>

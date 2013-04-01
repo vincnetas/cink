@@ -1,0 +1,15 @@
+<knot name="Zeppelin Bend">
+	<description></description>
+	<domains>
+		<domain value="mountaineering"/>
+		<domain value="sailing"/>
+	</domains>
+	<step>Form a bight in both ropes</step>
+	<step>and overlap them.</step>
+	<step>Pass each end around across itself - going over for the top bight and under for the bottom bight.</step>
+	<step>Thread both ends</step>
+	<step>past each other</step>
+	<step>through</step>
+	<step>the middle.</step>
+	<step>Tighten to form the Zeppelin Bend.</step>
+</knot>

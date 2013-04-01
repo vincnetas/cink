@@ -1,0 +1,12 @@
+<knot name="Poacher's Knot" alternative="Strangle Snare">
+	<description></description>
+	<domains>
+		<domain value="sailing"/>
+	</domains>
+	<step>Form a bight in the end of the rope.</step>
+	<step>Loosely wrap</step>
+	<step>the end around the bight</step>
+	<step>twice.</step>
+	<step>Tuck the end through these turns to complete the knot.</step>
+	<step>Pull tight.</step>
+</knot>
