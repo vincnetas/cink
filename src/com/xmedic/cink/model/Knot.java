@@ -129,4 +129,16 @@ public class Knot implements Serializable {
 	public Set<Domain> getDomains() {
 		return domains;
 	}
+
+	@Override
+	public boolean equals(Object o) {
+		return knotPath.equals(((Knot) o).knotPath);
+	}
+
+	@Override
+	public int hashCode() {
+		return knotPath.hashCode();
+	}
+	
+	
 }

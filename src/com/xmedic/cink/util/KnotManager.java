@@ -7,18 +7,22 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Random;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 import javax.xml.parsers.SAXParserFactory;
+
+import android.content.res.AssetManager;
 
 import com.xmedic.cink.model.Domain;
 import com.xmedic.cink.model.Knot;
 import com.xmedic.cink.model.handler.KnotHandler;
-
-import android.content.res.AssetManager;
 
 /**
  * @author vincent
@@ -95,6 +99,22 @@ public class KnotManager {
 		}
 		
 		return result;
+	}
+	
+	public List<Knot> getAllKnots() {
+		SortedSet<Knot> allKnots = new TreeSet<Knot>(new Comparator<Knot>() {
+
+			@Override
+			public int compare(Knot lhs, Knot rhs) {
+				return lhs.getName().compareTo(rhs.getName());
+			}
+		});
+		
+		for (Entry<Domain, List<Knot>> entry : getKnots().entrySet()) {
+			allKnots.addAll(entry.getValue());
+		}
+		
+		return new ArrayList<Knot>(allKnots);
 	}
 	
 	public List<Knot> getAllKnots(Domain domain) {
